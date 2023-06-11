@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&display=swap');
+
+
+:root {
+    --amarelo: #F0A202;
+    --laranja: #F18805;
+    --marrom: #73683B;
+    --vermelho: #D00000;
+    --branco: #F2F2F2;
+
+    --coxinha: 'Gasoek One', sans-serif;
+    --main: 'Kanit', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FCC646;
+    background: linear-gradient(357deg, #ecf002, #FCC646);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+
+
+h2,
+h4 {
+    font-family: var(--coxinha);
+    color: #2c260f;
+}
+
+
+
+#main {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+
+}
+
+#justificar {
+    display: flex;
+    justify-content: end;
+    min-height: 30vh;
+}
+
+#img-scaled {
+    animation: scaleAnimation 1s infinite;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1.0);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+
+
+#nav-box {
+    
+    overflow: hidden;
+}
+
+#nav-box a:hover {background-color: #D00000;
+color: #F2F2F2;
+border-radius: 4px;}
+
+#nav-box::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(5px);
+    z-index: 1;
+}
+
+section#produtos {
+    background-color: #73683b25;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+
+#about-me {
+    background-color: #F2F2F2;
+}
+
+p,
+a,
+table {
+    font-family: var(--main);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #0a0a0a00;
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd00;
+}
+
+tr {
+    background-color: #f0a10200;
+}
+
+th {
+    background-color: #f2f2f200;
+}
+
+tr:hover {
+    background-color: #f5f5f500;
+}
+
+#comprar {
+    font-size: 30px;
+    color: #00C800;
+}
+
+#order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 10px;
+}
+
+#botaozap{
+    background-color: var(--laranja);
+    text-transform: uppercase;
+    color: var(--branco);
+    font-family: var(--main);
+    
+}
